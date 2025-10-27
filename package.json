@@ -80,5 +80,15 @@
     "vite-plugin-electron": "^0.29.0",
     "vite-plugin-electron-renderer": "^0.14.6"
   },
-  "main": "dist-electron/main.js"
+  "main": "dist-electron/main.js",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@tailwindcss/oxide",
+      "electron",
+      "esbuild"
+    ],
+    "overrides": {
+      "esbuild@<=0.24.2": ">=0.25.0"
+    }
+  }
 }
