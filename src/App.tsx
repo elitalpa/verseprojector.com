@@ -1,8 +1,8 @@
-import { Suspense } from "react";
+// import { Suspense } from "react";
 import { useTranslation } from "react-i18next";
 import { LanguageSwitcher } from "./components/language-switcher";
 
-function HomePage() {
+function App() {
   const { t } = useTranslation();
 
   return (
@@ -16,12 +16,12 @@ function HomePage() {
   );
 }
 
-function App() {
-  return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <HomePage />
-    </Suspense>
-  );
-}
+// function App() {
+//   return (
+//     <Suspense fallback={<div>Loading...</div>}>
+//       <HomePage />
+//     </Suspense>
+//   );
+// }
 
 export default App;
